@@ -1,0 +1,433 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* /* height: 100vh; */
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation Styles */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav h3 {
+  font-size: 1.5rem;
+  color: #ff6347;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+  color: #ff6347;
+}
+
+nav button {
+  color: white;
+  background-color: #ff6347;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #ff4500;
+}
+
+/* Home Page Styles */
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+#home {
+  background-image: url(https://www.designpataki.com/wp-content/uploads/2023/04/New-In-Bangalore-Restaurants-Design-Pataki-Feature-Image-1.jpg);
+  background-size: cover; /* Ensures the background image covers the entire page */
+  background-position: center center; /* Centers the image */
+  background-attachment: fixed;
+  width: 100%;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+header a {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+header a:hover {
+  background-color: #ff4500;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.feature {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.feature img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.feature p {
+  padding: 0 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* About Page Styles */
+section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+#about {
+  background-image: url(https://metrobi.com/wp-content/uploads/2024/06/Ultimate-guide-to-hiring-restaurant-staff.webp);
+  background-size: cover; /* Ensures the background image covers the entire page */
+  background-position: center center; /* Centers the image */
+  background-attachment: fixed;
+}
+
+.about img {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about div {
+  flex: 2;
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff6347;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.team {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member h3 {
+  margin: 10px 0 5px;
+}
+
+.member p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Contact Page Styles */
+#contact {
+  background-image: url(https://t4.ftcdn.net/jpg/05/04/78/25/360_F_504782581_LHwsDbXlrFiiadWC4i15yV2lhbJnB8g0.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.contact img {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact div {
+  flex: 2;
+  padding: 20px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff6347;
+}
+
+.contact p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e5533d;
+}
+
+/* Signin Form */
+
+.signin-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6347;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #e5533d;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #ff6347;
+  font-size: 0.9rem;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+}
